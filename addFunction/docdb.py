@@ -9,7 +9,7 @@ import pydocumentdb.documents as documents
 
 class Repository:
     DB_NAME = "cralSpectra"
-    COLL_NAME = "Spectra"
+    COLL_NAME = "experimentalSpectra"
     COLLECTION = "dbs/%s/colls/%s" % (DB_NAME, COLL_NAME)
 
     def __init__(self, host, token):
