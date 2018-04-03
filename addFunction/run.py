@@ -42,6 +42,6 @@ json_data = json.dumps(responsedata)
 #response.write(json_data)
 #response.close()
 
-response = open(os.environ['res'], 'w')
+response = open(os.environ['resp'], 'w')
 response.write(json_data)
 response.close()
