@@ -8,7 +8,7 @@ import docdb
 os.environ["DOCDB_HOST"] = 'https://mmffcoqaidb.documents.azure.com:443/'
 os.environ["DOCDB_KEY"] = 'epU95lw68ON0azev8K3eXK5ZPfqdRmSKP32sjwBMBuHqbmr6v5lnMSlr8rrmUCdtTwBQMRtCOMw1oMicQNvzbA=='
 
-# request body (POST requests) is stored in a file,
+# request body (POST requests) is stored in a file
 # and the file path is exposed as an environment variable
 with open(os.environ["REQ"]) as req:
     details = json.loads(req.read())
