@@ -4,7 +4,6 @@ import uuid
 
 import docdb
 
-
 os.environ["DOCDB_HOST"] = 'https://mmffcoqaidb.documents.azure.com:443/'
 os.environ["DOCDB_KEY"] = 'epU95lw68ON0azev8K3eXK5ZPfqdRmSKP32sjwBMBuHqbmr6v5lnMSlr8rrmUCdtTwBQMRtCOMw1oMicQNvzbA=='
 
