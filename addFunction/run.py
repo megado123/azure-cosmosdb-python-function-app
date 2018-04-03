@@ -38,6 +38,10 @@ responsedata = {}
 responsedata['key'] = details['GID'] + "-" + details['Sample'] + "-" + details['Material']
 json_data = json.dumps(responsedata)
 
-response = json_data
+#response = json_data
+#response.write(json_data)
+#response.close()
+
+response = open(os.environ['res'], 'w')
 response.write(json_data)
 response.close()
