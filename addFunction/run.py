@@ -32,3 +32,12 @@ print(uuid.uuid4())
 print ("Storing the contact details in Azure Document DB")
 doc = repository.insert(details)
 print ("Repository returned %s" % doc)
+
+#new stuff
+responsedata = {}
+responsedata['key'] = details['GID'] + "-" + details['Sample'] + "-" + details['Material']
+json_data = json.dumps(responsedata)
+
+response = json_data
+response.write(json_data)
+response.close()
