@@ -8,8 +8,8 @@ import pydocumentdb.documents as documents
 #another
 
 class Repository:
-    DB_NAME = "contacs"
-    COLL_NAME = "contactInfo"
+    DB_NAME = "cralSpectra"
+    COLL_NAME = "Spectra"
     COLLECTION = "dbs/%s/colls/%s" % (DB_NAME, COLL_NAME)
 
     def __init__(self, host, token):
@@ -24,7 +24,7 @@ class Repository:
                     "indexingMode": "consistent"
                 },
                 "partitionKey": {
-                    "paths": ["/email"],
+                    "paths": ["/*"],
                     "kind": documents.PartitionKind.Hash
                 }
             }
